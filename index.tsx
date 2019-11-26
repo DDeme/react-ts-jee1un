@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { render } from 'react-dom';
 import { Home } from './routes/Home/Home';
 import { Welcome } from './routes/Welcome/Welcome';
+import { Test } from './routes/Test/Test';
 import './style.css';
 
 interface AppProps { }
@@ -20,7 +21,7 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <Fragment>
-        <Welcome name={this.state.name} />
+        <Test />
         
       </Fragment>
     );
